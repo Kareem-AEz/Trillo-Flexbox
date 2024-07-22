@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<meta
+			name="description"
+			content="Master building beautifful layouts using flexbox, master flex box now!"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+		<title>trillo &mdash; Your all-in-one booking app</title>
+	</head>
+	<body>
+		<div class="container">
+			<!-- header -->
+			<header class="header">
+				<!-- logo -->
+				<img class="header__logo" src="img/logo.png" alt="Trillo logo" />
+
+				<!-- search -->
+				<div class="search-dropdown">
+					<form action="#" class="search">
+						<input
+							class="search__input"
+							type="text"
+							placeholder="search hotels"
+						/>
+						<button class="search__button">
+							<svg class="search__icon">
+								<use xlink:href="sprite.svg#search" />
+							</svg>
+							<!-- <i class="search__icon fa-solid fa-magnifying-glass"></i> -->
+						</button>
+					</form>
+
+					<ul class="search-dropdown__menu">
+						<li class="search-dorpdown__item">4 Seasons</li>
+						<li class="search-dorpdown__item">Secrets Akumal Riviera Maya</li>
+						<li class="search-dorpdown__item">Padma Resort Ubud</li>
+						<li class="search-dorpdown__item">
+							Chandys Windy Woods 5 Star Resort Munnar
+						</li>
+					</ul>
+					<!-- <div class="search-dropdown__menu">
+					</div> -->
+				</div>
+
+				<!-- nav -->
+				<nav class="user__nav">
+					<!-- nav icons -->
+					<ul class="user__nav-list">
+						<!-- icon -->
+						<li class="user__nav-item">
+							<div class="user__nav-icon-wrapper" data-for="bookmarks">
+								<svg class="user__nav-icon">
+									<use xlink:href="sprite.svg#bookmarks" />
+								</svg>
+							</div>
+							<!-- <i
+								class="user__nav-icon fa-solid fa-bookmark"
+								data-for="bookmarks"
+							></i> -->
+
+							<!-- START drop down for bookmarks -->
+							<div class="dropdown-menu" data-for="bookmarks">
+								<ul class="dropdown-menu__list">
+									<li class="dropdown-menu__item">
+										<img src="img/hotel-1.jpg" alt="Corpo Santo Lisbon Hotel" />
+										<div class="dropdown-menu__text-box">
+											<h3 class="dropdown-menu__title">Corpo Santo Lisbon</h3>
+											<span>lorem ipsum</span>
+										</div>
+									</li>
+
+									<li class="dropdown-menu__item">
+										<img src="img/hotel-1.jpg" alt="Corpo Santo Lisbon Hotel" />
+										<div class="dropdown-menu__text-box">
+											<h3 class="dropdown-menu__title">Corpo Santo Lisbon</h3>
+											<span>lorem ipsum</span>
+										</div>
+									</li>
+
+									<li class="dropdown-menu__item">
+										<img src="img/hotel-1.jpg" alt="Corpo Santo Lisbon Hotel" />
+										<div class="dropdown-menu__text-box">
+											<h3 class="dropdown-menu__title">Corpo Santo Lisbon</h3>
+											<span>lorem ipsum</span>
+										</div>
+									</li>
+
+									<li class="dropdown-menu__item">
+										<img src="img/hotel-1.jpg" alt="Corpo Santo Lisbon Hotel" />
+										<div class="dropdown-menu__text-box">
+											<h3 class="dropdown-menu__title">Corpo Santo Lisbon</h3>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- END drop down for bookmarks -->
+						</li>
+
+						<!-- icon -->
+						<li class="user__nav-item">
+							<div class="user__nav-icon-wrapper" data-for="messages">
+								<svg class="user__nav-icon" data-for="messages">
+									<use xlink:href="sprite.svg#messages" />
+								</svg>
+							</div>
+
+							<!-- <i
+								class="user__nav-icon fa-solid fa-comments"
+								data-for="messages"
+							></i> -->
+
+							<!-- START drop down for bookmarks -->
+							<div class="dropdown-menu" data-for="messages">
+								<ul class="dropdown-menu__list">
+									<li class="dropdown-menu__item">
+										<img src="img/hotel-1.jpg" alt="Corpo Santo Lisbon Hotel" />
+										<div class="dropdown-menu__text-box">
+											<h3 class="dropdown-menu__title">Corpo Santo Lisbon</h3>
+											<span>lorem ipsum</span>
+										</div>
+									</li>
+
+									<li class="dropdown-menu__item">
+										<img src="img/hotel-1.jpg" alt="Corpo Santo Lisbon Hotel" />
+										<div class="dropdown-menu__text-box">
+											<h3 class="dropdown-menu__title">Corpo Santo Lisbon</h3>
+											<span>lorem ipsum</span>
+										</div>
+									</li>
+
+									<li class="dropdown-menu__item">
+										<img src="img/hotel-1.jpg" alt="Corpo Santo Lisbon Hotel" />
+										<div class="dropdown-menu__text-box">
+											<h3 class="dropdown-menu__title">Corpo Santo Lisbon</h3>
+											<span>lorem ipsum</span>
+										</div>
+									</li>
+
+									<li class="dropdown-menu__item">
+										<img src="img/hotel-1.jpg" alt="Corpo Santo Lisbon Hotel" />
+										<div class="dropdown-menu__text-box">
+											<h3 class="dropdown-menu__title">Corpo Santo Lisbon</h3>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- END drop down for bookmarks -->
+						</li>
+
+						<li class="user__nav-item" data-for="user">
+							<img class="user__nav-user" src="img/user-1.jpg" alt="user" />
+							<span class="user__nav-name">Erik B.</span>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+			<div class="content">
+				<nav class="sidebar">
+					<ul class="side-nav">
+						<li class="side-nav__item side-nav__item--active">
+							<a href="#" class="side-nav__link">
+								<svg class="side-nav__icon">
+									<use xlink:href="sprite.svg#home"></use>
+								</svg>
+								hotel
+							</a>
+						</li>
+
+						<li class="side-nav__item">
+							<a href="#" class="side-nav__link">
+								<svg class="side-nav__icon">
+									<use xlink:href="sprite.svg#car-rental"></use>
+								</svg>
+								car rental
+							</a>
+						</li>
+
+						<li class="side-nav__item">
+							<a href="#" class="side-nav__link">
+								<svg class="side-nav__icon">
+									<use xlink:href="sprite.svg#plane"></use>
+								</svg>
+								flights
+							</a>
+						</li>
+
+						<li class="side-nav__item">
+							<a href="#" class="side-nav__link">
+								<svg class="side-nav__icon">
+									<use xlink:href="sprite.svg#map"></use>
+								</svg>
+								mapty
+							</a>
+						</li>
+					</ul>
+
+					<span class="legal">&copy; 2024 by Trillo. All rights reserved.</span>
+				</nav>
+
+				<main class="hotel-view">
+					<!--  -->
+					<div class="gallery">
+						<figure class="gallery__item">
+							<img
+								src="img/Gallery/1.webp"
+								alt="photo for Amalfi coast"
+								class="gallery__photo"
+							/>
+							<figcaption class="gallery__title">Amalfi Coast</figcaption>
+						</figure>
+						<figure class="gallery__item">
+							<img
+								src="img/Gallery/2.webp"
+								alt="photo for Amalfi coast"
+								class="gallery__photo"
+							/>
+							<figcaption class="gallery__title">Amalfi Coast</figcaption>
+						</figure>
+						<figure class="gallery__item">
+							<img
+								src="img/Gallery/3.webp"
+								alt="photo for Amalfi coast"
+								class="gallery__photo"
+							/>
+							<figcaption class="gallery__title">Amalfi Coast</figcaption>
+						</figure>
+						<figure class="gallery__item">
+							<img
+								src="img/Gallery/4.webp"
+								alt="photo for Amalfi coast"
+								class="gallery__photo"
+							/>
+							<figcaption class="gallery__title">Amalfi Coast</figcaption>
+						</figure>
+						<figure class="gallery__item">
+							<img
+								src="img/Gallery/5.webp"
+								alt="photo for Amalfi coast"
+								class="gallery__photo"
+							/>
+							<figcaption class="gallery__title">Amalfi Coast</figcaption>
+						</figure>
+						<figure class="gallery__item">
+							<img
+								src="img/Gallery/6.webp"
+								alt="photo for Amalfi coast"
+								class="gallery__photo"
+							/>
+							<figcaption class="gallery__title">Amalfi Coast</figcaption>
+						</figure>
+						<figure class="gallery__item">
+							<img
+								src="img/Gallery/7.webp"
+								alt="photo for Amalfi coast"
+								class="gallery__photo"
+							/>
+							<figcaption class="gallery__title">Amalfi Coast</figcaption>
+						</figure>
+						<figure class="gallery__item">
+							<img
+								src="img/Gallery/8.webp"
+								alt="photo for Amalfi coast"
+								class="gallery__photo"
+							/>
+							<figcaption class="gallery__title">Amalfi Coast</figcaption>
+						</figure>
+					</div>
+
+					<!--  -->
+					<div class="overview">
+						<div class="overview__hotel-stars-wrapper">
+							<h1 class="overview__heading">hotel las palmas</h1>
+							<div class="overview__stars">
+								<svg class="overview__star">
+									<use xlink:href="sprite.svg#star" />
+								</svg>
+								<svg class="overview__star">
+									<use xlink:href="sprite.svg#star" />
+								</svg>
+								<svg class="overview__star">
+									<use xlink:href="sprite.svg#star" />
+								</svg>
+								<svg class="overview__star">
+									<use xlink:href="sprite.svg#star" />
+								</svg>
+								<svg class="overview__star">
+									<use xlink:href="sprite.svg#star" />
+								</svg>
+							</div>
+						</div>
+						<div class="overview__location">
+							<svg class="overview__location-icon">
+								<use xlink:href="sprite.svg#pin" />
+							</svg>
+							<button class="btn-inline">Amalfi Coast</button>
+						</div>
+
+						<div class="overview__rating">
+							<span class="overview__rating-avg">8.7</span>
+							<span class="overview__rating-count">420 rates</span>
+						</div>
+					</div>
+
+					<!--  -->
+					<div class="details">
+						<div class="description">
+							<!-- paragraphs -->
+							<p class="paragraph">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+								nisi dignissimos debitis ratione sapiente saepe. Accusantium
+								cumque, quas, ut corporis incidunt deserunt quae architecto
+								voluptate.
+							</p>
+							<p class="paragraph">
+								Accusantium cumque, quas, ut corporis incidunt deserunt quae
+								architecto voluptate delectus, inventore iure aliquid aliquam.
+							</p>
+
+							<!-- privileges -->
+							<ul class="list">
+								<li class="list__item">First beach line</li>
+								<li class="list__item">Breakfast included</li>
+								<li class="list__item">Free airport shuttle</li>
+								<li class="list__item">Free wifi in all rooms</li>
+								<li class="list__item">Air conditioning and heating</li>
+								<li class="list__item">Pets allowed</li>
+								<li class="list__item">We speak all languages</li>
+								<li class="list__item">Perfect for families</li>
+							</ul>
+
+							<div class="recommendation">
+								<p class="recommendation__text">
+									Lucy and 3 other friends recommended this hotel.
+								</p>
+								<div class="recommendation__imgs">
+									<img
+										src="/img/user-2.jpg"
+										alt="user Lucy recommending this hotel"
+										class="recommendation__img"
+									/>
+									<img
+										src="/img/user-3.jpg"
+										alt="user Lucy recommending this hotel"
+										class="recommendation__img"
+									/>
+									<img
+										src="/img/user-4.jpg"
+										alt="user Lucy recommending this hotel"
+										class="recommendation__img"
+									/>
+									<img
+										src="/img/user-5.jpg"
+										alt="user Lucy recommending this hotel"
+										class="recommendation__img"
+									/>
+								</div>
+							</div>
+						</div>
+
+						<div class="user-reviews">
+							<figure class="review">
+								<blockquote class="review__text">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+									doloremque architecto dicta animi, totam, itaque officia.
+								</blockquote>
+								<figcaption class="review__user">
+									<img
+										src="img/user-2.jpg"
+										alt="user lucy review"
+										class="review__user-photo"
+									/>
+									<div class="review__user-box">
+										<span class="review__user-name">Lucy Jhonson</span>
+										<span class="review__user-date">Feb 23th, 2023</span>
+									</div>
+									<div class="review__rating">8.3</div>
+								</figcaption>
+							</figure>
+							<figure class="review">
+								<blockquote class="review__text">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+									doloremque architecto dicta animi.
+								</blockquote>
+								<figcaption class="review__user">
+									<img
+										src="img/user-3.jpg"
+										alt="user lucy review"
+										class="review__user-photo"
+									/>
+									<div class="review__user-box">
+										<span class="review__user-name">Nick Smith</span>
+										<span class="review__user-date">Aug 18th, 2023</span>
+									</div>
+									<div class="review__rating">7.8</div>
+								</figcaption>
+							</figure>
+							<button class="btn-inline align-self-center">
+								Read more <span>&rarr;</span>
+							</button>
+						</div>
+					</div>
+
+					<div class="CTA">
+						<h2 class="CTA__title">
+							Good news! We have 4 free rooms for your selected dates!
+						</h2>
+
+						<button class="btn-primary">
+							<span class="btn-primary__visible"> Book Now </span>
+							<span class="btn-primary__invisible"> Only 4 Rooms </span>
+						</button>
+					</div>
+				</main>
+			</div>
+		</div>
+
+		<!-- <script
+			src="https://kit.fontawesome.com/9a2ad96e3c.js"
+			crossorigin="anonymous"
+		></script> -->
+	</body>
+</html>
+/

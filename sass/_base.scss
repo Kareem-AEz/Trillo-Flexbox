@@ -1,0 +1,145 @@
+/*
+COLORS
+
+Primary: #eb2f64
+Primary light: #FF3366
+Primary dark: #BA265D
+
+Grey light 1: #faf9f9
+Grey light 2: #f4f2f2
+Grey light 3: #f0eeee
+Grey light 4: #ccc
+
+Grey dark 1: #333
+Grey dark 2: #777
+Grey dark 3: #999
+
+*/
+
+:root {
+	--color-Primary: #eb2f64;
+	--color-Primary-light: #ff3366;
+	--color-Primary-dark: #ba265d;
+
+	--color-white: #fff;
+
+	--color-Grey-light-1: #faf9f9;
+	--color-Grey-light-2: #f4f2f2;
+	--color-Grey-light-3: #f0eeee;
+	--color-Grey-light-4: #ccc;
+
+	--color-Grey-dark-1: #333;
+	--color-Grey-dark-2: #777;
+	--color-Grey-dark-3: #999;
+
+	--shadow-dark-1: 0 2rem 3rem rgba(51, 51, 51, 0.2);
+	--shadow-light-1: 0 2rem 5rem rgba(51, 51, 51, 0.08);
+
+	--line: 1px solid var(--color-Grey-light-3);
+}
+
+$pb-75em: 75em;
+$pb-68em: 68em;
+$pb-52em: 52em;
+$pb-40em: 40em;
+$pb-22em: 22.5em;
+
+/* Reset and Box-Sizing */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+/* Base Styles */
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+
+	@media only screen and (max-width: $pb-68em) {
+		font-size: 50%;
+	}
+	@media only screen and (max-width: $pb-22em) {
+		font-size: 43.75%;
+	}
+}
+
+body {
+	// font style
+	font-family: "open-sans", sans-serif;
+	font-weight: 400;
+	line-height: 1.5;
+	color: var(--color-Grey-dark-2);
+
+	// background style
+	background-image: linear-gradient(
+		to right bottom,
+		var(--color-Primary-light),
+		var(--color-Primary-dark)
+	);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	// size
+	min-height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@media only screen and (max-width: $pb-75em) {
+		align-items: flex-start;
+	}
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: inline-block;
+	max-width: 100%;
+}
+
+svg {
+	height: 2rem;
+	width: 2rem;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+	color: inherit;
+	font-size: inherit;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+/* Remove animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation: none;
+		transition: none;
+	}
+}
