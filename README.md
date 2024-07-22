@@ -21,4 +21,4 @@ Trillo is a responsive hotel booking website project developed as part of the [A
 
 This project utilizes SVG sprites to optimize icon loading and reduce the number of HTTP requests. The SVG sprites were created using [svg-sprite-generator](https://www.npmjs.com/package/svg-sprite-generator).
 
-# [Check it] (https://kareem-aez.github.io/Trillo-Flexbox/)
+[Check it] (https://kareem-aez.github.io/Trillo-Flexbox/)
